@@ -1,0 +1,45 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.
+# Mandatory items:
+
+[general]
+name=Walkability
+qgisMinimumVersion=3.0
+qgisMaximumVersion=4.99
+description=Walkability Analysis - Pedestrian accessibility analysis for urban planning
+version=0.2.3
+author=Zobnin_V.V.
+email=st106193@student.spbu.ru
+
+about=This plugin provides comprehensive walkability analysis for urban areas. It calculates shortest routes considering multiple factors: street width, surface type, population density, and proximity to parks. Compatible with QGIS 3.x and 4.x. Supports multiple spatial data formats (GeoPackage, Shapefile, GeoJSON, etc.).
+
+tracker=http://bugs
+repository=http://repo
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+changelog=0.2.3 - Guaranteed length calculation in EPSG:3857 only, 0.2.2 - Fixed QMetaType for QGIS 4, 0.2 - QGIS 4 compatibility, 0.1 - Initial release
+
+# Tags are comma separated with spaces allowed
+tags=walkability,pedestrian,urban planning,routing,accessibility,analysis,network
+
+homepage=http://homepage
+category=Vector
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+# If the plugin can run on QGIS Server.
+server=False
