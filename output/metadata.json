@@ -1,0 +1,33 @@
+{
+  "qgis_version": "4.0.2-Norrköping",
+  "qt_framework": "PyQt6",
+  "routes_calculated": 2723,
+  "start_points": 2763,
+  "end_points": 12,
+  "graph_nodes": 47272,
+  "graph_edges": 55448,
+  "coordinate_systems": {
+    "analysis_crs": "EPSG:3857",
+    "analysis_crs_description": "Web Mercator (метры)",
+    "export_crs": "EPSG:4326",
+    "export_crs_description": "WGS84 (градусы)",
+    "source_crs": "EPSG:3857"
+  },
+  "units": {
+    "length": "meters",
+    "length_note": "Длина ВСЕГДА в метрах, вычисляется в EPSG:3857",
+    "time": "minutes",
+    "speed": "4 km/h (66.667 m/min)",
+    "coordinates_export": "degrees (WGS84)",
+    "coordinates_calculation": "meters (Web Mercator)"
+  },
+  "calculation": {
+    "formula_weight": "weight = length × (1-4000/density) × park_prox × (1-1/(10×width)) × surface_coeff",
+    "formula_length": "length = Σ √((x₂-x₁)² + (y₂-y₁)²) в EPSG:3857",
+    "formula_time": "time = length / 66.667 (минуты)",
+    "density_threshold": 4000.0,
+    "park_buffer_m": 8.0,
+    "park_proximity_near": 0.95,
+    "coord_precision": 2
+  }
+}
